@@ -1,0 +1,230 @@
+:root { /* base var to call throughout stylesheet */
+  --baseDark: #00004a;    
+  --baseLight: #ffffff;
+  --baseHigh: #ffff00;
+  --h1: 35px;
+  --h2: 30px;
+  --h3: 25px;
+}
+
+html { /* general attributes and functions for entire html doc */
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* CSS starts mobile first display at 300px */
+
+.header {
+  background-color: var(--baseDark);
+  color: var(--baseLight);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.header h1 {
+  font-size: var(--h1);
+  margin: 5px;
+}
+
+.header span {
+  color: var(--baseHigh);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.header li {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 15px;
+  margin: 6.5px;
+}
+
+.header a {
+  text-decoration: none;
+  color: var(--baseLight);
+}
+
+.header li a:visited {
+  color: var(--baseHigh);
+}
+
+.hero-img {
+  background-image: url(../media/porthero.png);
+}
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#about-me h2 {
+  font-size: var(--h2);
+  color: var(--baseDark);
+  margin: 5px;
+  text-decoration: underline;
+  text-decoration-color: var(--baseHigh);
+}
+
+.round-pic {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px;
+}
+
+#about-me p {
+  font-size: 19px;
+  color: var(--baseDark);
+  background-color: #ffffffd0;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 10%;
+}
+
+#about-me a {
+  text-decoration: underline;
+  text-decoration-color: var(--baseHigh);
+  color: var(--baseDark);
+}
+
+#about-me a:visited {
+  text-decoration-color: var(--baseDark);
+  color: var(--baseDark);
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#projects h2 {
+  font-size: var(--h2);
+  color: var(--baseDark);
+  margin: 5px;
+  text-decoration: underline;
+  text-decoration-color: var(--baseHigh);
+}
+
+#projects li {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--baseDark);
+}
+
+#projects img {
+  width: 270px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px;
+}
+
+#projects p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#projects a:visited {
+  text-decoration: underline;
+  text-decoration-color: var(--baseDark);
+  color: var(--baseDark);
+}
+
+#resume {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 15px;
+  font-size: var(--h2);
+  color: var(--baseDark);
+  text-decoration: underline;
+  text-decoration-color: var(--baseHigh);
+  margin-bottom: -15px;
+}
+
+#resume a {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px;
+}
+
+#resume p {
+  font-size: 1rem;
+  color: var(--baseDark);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 15px;
+}
+
+#resume a:visited {
+  text-decoration-color: var(--baseDark);
+  color: var(--baseDark);
+}
+
+#contact-me h2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 10px;
+  font-size: var(--h2);
+  color: var(--baseDark);
+  text-decoration: underline;
+  text-decoration-color: var(--baseHigh);
+}
+
+#contact-me ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#contact-me li {
+  margin: 10px;
+}
+
+#contact-me a {
+  text-decoration: none;
+  color: var(--baseDark);
+}
+
+#contact-me a:visited {
+  text-decoration: underline;
+  color: var(--baseDark);
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: var(--h3);
+  color: var(--baseLight);
+  background-color: var(--baseDark);
+  padding: 10px;
+  margin-top: 10px;
+}

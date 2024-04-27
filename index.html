@@ -10,91 +10,86 @@
 </head>
 
 <body>
-
-    <div class="header"><!--Header section-->
-        <Header>
-            <h1>A Dev Portfolio by <span>Chris Williams</span></h1>
-                <nav>
-                    <ul>
-                        <li><!--About me link to section-->
-                            <a href="#about-me" aria-label="Select to review more about me" title="Click to scroll to about me section">About me</a>
-                        </li>
-                        <li><!--Project link to section-->
-                            <a href="#projects" aria-label="Select to review more about my projects" title="Click to scroll to projects section">Projects</a>
-                        </li>
-                        <li><!--Contact me link to section-->
-                            <a href="#resume" aria-label="Select to review my resume" title="Click to scroll to resume section">Resume</a>
-                        </li>
-                        <li><!--Contact me link to section-->
-                            <a href="#contact-me" aria-label="Select to review my contact listings" title="Click to scroll to contact me section">Contact me</a>
-                        </li>
-                    </ul>
-                </nav>
-        </Header>
-    </div>
-
-    <div class="hero-abm"><!--About me section // add bg img in css-->
-        <section id="about-me">
-            <h2>About me</h2>
-                <p><!--Write about me -->
-                    Hello! My name is Chris Williams, I am a budding software developer that aims to create consistent quality code and designs for others to enjoy.  I have many hobbies and interests including, spending quality time with my girlfriend and our doggy, playing video games, drifting cars, and dabbling a bit into paper leverage trading (primarily gold/usd).  Although I am rather new into the world of software development, I am very excited and eager to learn all aspects and add it to the top of my list of interests.  I welcome you to my portfolio, please feel free to <a href="#contact-me" aria-label="Select to review my contact listings">contact me</a> at any time! 
-                </p>
-                <!--profile picture-->
-                <img src="./assets/media/EDx_Profile_Pic.jpg" alt="profile picture"></a>
-        </section>
-    </div>
-
-    <div class="project-sect"><!--Projects section-->
-        <section id="projects"">
-            <h2>Projects</h2>
+        
+    <Header class="header" id="header">
+        <h1><a href="#header" aria-label="Click to go to home page" title="Click to go to home page">A Dev Portfolio by <span>Chris Williams</span></a></h1>
+            <nav>
                 <ul>
-                    <li>
-                        <a href="https://github.com/xChrisxWilliamsx/horiseon-refactor" alt="horiseon-refactor project" target="_blank" title="Click to open new tab directing you to horiseon-refactor GitHub repo"> <img src="./assets/media/horiseon-refactor-webpic.png" alt="horiseon-refactor project">Horiseon Refactor</a>
+                    <li><!--About me link to section-->
+                        <a href="#about-me" aria-label="Select to review more about me" title="Click to scroll to about me section">About me</a>
                     </li>
-                    <li>
-                        <a href="https://github.com/xChrisxWilliamsx/prework-study-guide-v2" alt="prework-study-guide-v2" target="_blank" title="Click to open new tab directing you to prework-study-guide-v2 GitHub"> <img src="./assets/media/preworkstudyguidepic.png" alt="prework-study-guide-v2">V.2 Pre-work Study Guide</a>
+                    <li><!--Project link to section-->
+                        <a href="#projects" aria-label="Select to review more about my projects" title="Click to scroll to projects section">Projects</a>
                     </li>
-                    <li>
-                        <p>Coming soon!</p><!--add unicode \01F3D7 for construction site as bg img-->
+                    <li><!--Contact me link to section-->
+                        <a href="#resume" aria-label="Select to review my resume" title="Click to scroll to resume section">Resume</a>
                     </li>
-                    <li>
-                        <p>Coming soon!</p><!--add unicode \01F3D7 for construction site as bg img-->
-                    </li>
-                    <li>
-                        <p>Coming soon!</p><!--add unicode \01F3D7 for construction site as bg img-->
+                    <li><!--Contact me link to section-->
+                        <a href="#contact-me" aria-label="Select to review my contact listings" title="Click to scroll to contact me section">Contact me</a>
                     </li>
                 </ul>
-        </section>
-    </div>
+            </nav>
+    </Header>
     
-    <div class="resume-sect"><!--Resume section-->
-        <section id="resume">
-            <h2>Resume</h2>
-                <a href="./assets/media/ChrisResume.pdf" alt="Link to resume pdf" target="_blank" title="Click to open my resume in a new tab"> <img src="./assets/media/devportresumeimg.png" alt="Link to resume pdf">Click to open my resume in a new tab!</a>
-        </section>
+    <div class="hero-img"><!--About me section / add bg img in css-->
+        <article id="about-me">
+            <h2>About me</h2>
+                <!--profile picture-->
+                <div class="round-pic"><img src="./assets/media/EDx_Profile_Pic.jpg" alt="profile picture"></a></div>
+                    <p><!--Write about me-->
+                        Hello! My name is Chris Williams, I am a budding software developer that aims to create consistent quality code and designs for others to enjoy.  I have many hobbies and interests including, spending quality time with my girlfriend and our doggy, playing video games, drifting cars, and dabbling a bit into paper leverage trading (primarily gold/usd).  Although I am rather new into the world of software development, I am very excited and eager to learn all aspects and add it to the top of my list of interests.  I welcome you to my portfolio, please feel free to <a href="#contact-me" aria-label="Select to review my contact listings">contact me</a> at any time! 
+                    </p>
+        </article>
     </div>
 
-    <div class="contact-sect"><!--Contact me section-->
-        <section id="contact-me">
-            <h2>Contact me</h2>
-                <ul>
-                    <li>
-                        <a href="tel:+19163422265" alt="phone number">916-342-2265</a>
-                    </li>
-                    <li>
-                        <a href="mailto:williamsc0325@gmail.com" alt="email address">williamsc0325@gmail.com</a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/williamsc1" alt="linkedin profile">LinkIn</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/xChrisxWilliamsx" alt="GitHub profile">GitHub</a>
-                    </li>
-                </ul>
-        </section> 
-    </div>
+    <section id="projects""><!--Projects section-->
+        <h2>Projects</h2>
+            <ul>
+                <li>
+                    <a href="https://github.com/xChrisxWilliamsx/horiseon-refactor" alt="horiseon-refactor project" target="_blank" title="Click to open new tab directing you to horiseon-refactor GitHub repo"> <img src="./assets/media/horiseon-refactor-webpic.png" alt="horiseon-refactor project"> <p>Horiseon Refactor</p> </a>
+                </li>
+                <li>
+                    <a href="https://github.com/xChrisxWilliamsx/prework-study-guide-v2" alt="prework-study-guide-v2" target="_blank" title="Click to open new tab directing you to prework-study-guide-v2 GitHub"> <img src="./assets/media/preworkstudyguidepic.png" alt="prework-study-guide-v2"> <p>V.2 Pre-work Study Guid</p> </a>
+                </li>
+                <li>
+                    <img src="assets/media/under_construction.png" alt="Under construction, project coming soon!" title="Under construction">
+                    <p>Coming soon!</p>
+                </li>
+                <li>
+                    <img src="assets/media/under_construction.png" alt="Under construction, project coming soon!" title="Under construction"> 
+                    <p>Coming soon!</p>
+                </li>
+                <li>
+                    <img src="assets/media/under_construction.png" alt="Under construction, project coming soon!" title="Under construction">
+                    <p>Coming soon!</p>
+                </li>
+            </ul>
+    </section>
+    
+    <figure id="resume"><!--Resume section-->
+        <h2>Resume</h2>
+            <a href="./assets/media/ChrisResume.pdf" alt="Link to resume pdf" target="_blank" title="Click to open my resume in a new tab"> <img src="./assets/media/devportresumeimg.png" alt="Link to resume pdf"> <p>Click to open my resume in a new tab!</p> </a>
+    </figure>
 
-    <footer>
+    <address id="contact-me"><!--Contact me section-->
+        <h2>Contact me</h2>
+            <ul>
+                <li>
+                    <a href="tel:+19163422265" alt="phone number">916-342-2265</a>
+                </li>
+                <li>
+                    <a href="mailto:williamsc0325@gmail.com" alt="email address">williamsc0325@gmail.com</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/williamsc1"  target="_blank" title="Click to open LinkedIn in a new tab" alt="linkedin profile">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://github.com/xChrisxWilliamsx" target="_blank" title="Click to open Github in a new tab" alt="GitHub profile">GitHub</a>
+                </li>
+            </ul>
+    </address> 
+
+    <footer class="footer">
         <h3>Thank you for visiting!</h3>
     </footer>
     
