@@ -1,13 +1,10 @@
-:root { /* base var to call throughout stylesheet */
+:root { /* base var to call throughout stylesheets */
   --baseDark: #00004a;    
   --baseLight: #ffffff;
   --baseHigh: #ffff00;
   --h1: 35px;
   --h2: 30px;
   --h3: 25px;
-}
-
-html { /* general attributes and functions for entire html doc */
   scroll-behavior: smooth;
   scroll-padding-top: 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -15,6 +12,7 @@ html { /* general attributes and functions for entire html doc */
 
 /* CSS starts mobile first display at 300px */
 
+/* base style for header */
 .header {
   background-color: var(--baseDark);
   color: var(--baseLight);
@@ -23,11 +21,13 @@ html { /* general attributes and functions for entire html doc */
   flex-wrap: wrap;
 }
 
+/* style for heading element 1 nested in header */
 .header h1 {
   font-size: var(--h1);
   margin: 5px;
 }
 
+/* style for span element in heading 1 (title) */
 .header span {
   color: var(--baseHigh);
   display: flex;
@@ -36,6 +36,7 @@ html { /* general attributes and functions for entire html doc */
   flex-wrap: wrap;
 }
 
+/* style for nav link heading items */
 .header li {
   display: inline-flex;
   flex-direction: row;
@@ -45,19 +46,25 @@ html { /* general attributes and functions for entire html doc */
   margin: 6.5px;
 }
 
+/* style for hyper link elements in nav */
 .header a {
   text-decoration: none;
   color: var(--baseLight);
 }
 
+/* style for hyper links after being visited */ 
 .header li a:visited {
   color: var(--baseHigh);
 }
 
+/* applies background image */
 .hero-img {
   background-image: url(../media/porthero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+/* adds flex box to about me section */
 #about-me {
   display: flex;
   flex-direction: column;
@@ -65,6 +72,7 @@ html { /* general attributes and functions for entire html doc */
   align-items: center;
 }
 
+/* styles heading 2 element for about me section */
 #about-me h2 {
   font-size: var(--h2);
   color: var(--baseDark);
@@ -73,6 +81,7 @@ html { /* general attributes and functions for entire html doc */
   text-decoration-color: var(--baseHigh);
 }
 
+/* styles and sizes about me picture */
 .round-pic {
   width: 150px;
   height: 150px;
@@ -84,6 +93,7 @@ html { /* general attributes and functions for entire html doc */
   margin: 5px;
 }
 
+/* styles about me paragraph */
 #about-me p {
   font-size: 19px;
   color: var(--baseDark);
@@ -93,17 +103,20 @@ html { /* general attributes and functions for entire html doc */
   border-radius: 10%;
 }
 
+/* applies style to hyperlink in about me paragraph */
 #about-me a {
   text-decoration: underline;
   text-decoration-color: var(--baseHigh);
   color: var(--baseDark);
 }
 
+/* styles about me hyperlink after its been visited */ 
 #about-me a:visited {
   text-decoration-color: var(--baseDark);
   color: var(--baseDark);
 }
 
+/* adds flex box to project section */
 #projects {
   display: flex;
   flex-direction: column;
@@ -112,6 +125,7 @@ html { /* general attributes and functions for entire html doc */
   margin-top: 10px;
 }
 
+/* styles project heading 2 element */ 
 #projects h2 {
   font-size: var(--h2);
   color: var(--baseDark);
@@ -120,6 +134,7 @@ html { /* general attributes and functions for entire html doc */
   text-decoration-color: var(--baseHigh);
 }
 
+/* styles and defines flex style to link items */ 
 #projects li {
   display: flex;
   flex-direction: column;
@@ -127,6 +142,7 @@ html { /* general attributes and functions for entire html doc */
   color: var(--baseDark);
 }
 
+/* sizes and sets flex properties to images in project section */ 
 #projects img {
   width: 270px;
   height: 170px;
@@ -136,18 +152,21 @@ html { /* general attributes and functions for entire html doc */
   margin: 15px;
 }
 
+/* sets flex properties to projects paragraph */ 
 #projects p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+/* styles hyper links in project section after being visited */
 #projects a:visited {
   text-decoration: underline;
   text-decoration-color: var(--baseDark);
   color: var(--baseDark);
 }
 
+/* styles and applies flex properties to resume section */
 #resume {
   display: flex;
   flex-direction: column;
@@ -161,6 +180,7 @@ html { /* general attributes and functions for entire html doc */
   margin-bottom: -15px;
 }
 
+/* styles and applies flex properties to resume anchor section */
 #resume a {
   width: 270px;
   display: flex;
@@ -169,6 +189,7 @@ html { /* general attributes and functions for entire html doc */
   margin: 15px;
 }
 
+/* styles and applies flex properties to resume paragraph section */
 #resume p {
   font-size: 1rem;
   color: var(--baseDark);
@@ -179,11 +200,13 @@ html { /* general attributes and functions for entire html doc */
   margin: 15px;
 }
 
+/* styles resume anchor section after being visited */
 #resume a:visited {
   text-decoration-color: var(--baseDark);
   color: var(--baseDark);
 }
 
+/* styles and applies flex properties to contact heading element */
 #contact-me h2 {
   display: flex;
   flex-direction: column;
@@ -196,6 +219,7 @@ html { /* general attributes and functions for entire html doc */
   text-decoration-color: var(--baseHigh);
 }
 
+/* applies flex properties to contact unordered listed section*/
 #contact-me ul {
   display: flex;
   flex-direction: column;
@@ -203,20 +227,24 @@ html { /* general attributes and functions for entire html doc */
   flex-wrap: wrap;
 }
 
+/* applies spacing via margin to contact listed section */
 #contact-me li {
   margin: 10px;
 }
 
+/* styles contact anchor section */
 #contact-me a {
   text-decoration: none;
   color: var(--baseDark);
 }
 
+/* styles contact anchor section after being visited */
 #contact-me a:visited {
   text-decoration: underline;
   color: var(--baseDark);
 }
 
+/* styles and applies flex properties to footer section*/
 .footer {
   display: flex;
   flex-direction: row;
@@ -227,4 +255,75 @@ html { /* general attributes and functions for entire html doc */
   background-color: var(--baseDark);
   padding: 10px;
   margin-top: 10px;
+}
+
+/* view at 400px still at mobile size */ 
+@media (min-width: 400px) {
+  .header h1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .header span {
+    align-items: center;
+  }
+
+  .header ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+}
+
+/* view at 500px still at mobile size */
+@media (min-width: 500px) {
+  #projects img {
+    width: 450px;
+    height: 250px;
+  }
+
+  #resume a {
+    width: 352px;
+  }
+}
+
+/* view at 750px+ rough tablet size */
+@media (min-width: 750px) {
+  .header a:hover {
+    box-shadow: 0px 0px 10px 0px white;
+  }
+
+  #about-me p {
+    width: 500px;
+    margin: 15px;
+  }
+  
+  #projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 750px;
+  }
+
+  #projects li:first-child {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  #projects img {
+    width: 300px;
+    height: 150px;
+  }
+
+  #main-project img {
+    width: 700px;
+    height: 400px;
+  }
 }
