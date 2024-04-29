@@ -9,6 +9,7 @@
 <p> If you would like to connect with my please reach out to me.  
 
 <p> <strong> Webpage should render as such: </strong>
+<br>
 
 <img src="./assets/media/dev_port_full_screen_render.png" width="400" height="450" alt="portfolio full page render">
 
